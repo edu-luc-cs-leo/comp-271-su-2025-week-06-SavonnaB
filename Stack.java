@@ -5,7 +5,8 @@ public class Stack extends DynamicArray implements Comparable<Stack>, Xifo<Strin
     } // method compareTo
 
     public String peek() {
-        return null;
+        if (this.size() == 0 ) return null; 
+        return this.get(this.size() - 1); //SB: this piece should return element at the top of the stack without removal like a "preview"
     } // method peek
 
     public String pop() {
