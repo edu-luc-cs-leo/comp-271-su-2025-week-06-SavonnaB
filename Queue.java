@@ -1,7 +1,7 @@
 public class Queue extends DynamicArray implements Comparable<Queue>, Xifo<String>, Fifo<String> {
 
     public int compareTo(Queue other) {
-        return -1234;
+       return this.getOccupancy() - other.getOccupancy(); //SB: compares occupancy and returns zero if same, positive or negative if bigger or smaller
     } // method compareTo
 
     public String peek() {
