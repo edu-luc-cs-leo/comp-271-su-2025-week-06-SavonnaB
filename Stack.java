@@ -10,7 +10,8 @@ public class Stack extends DynamicArray implements Comparable<Stack>, Xifo<Strin
     } // method peek
 
     public String pop() {
-        return null;
+        if (this.size() == 0) return null;
+        return this.remove(this.size() - 1); //SB: similar to the peek method, this should remove the last element and return the stack
     } // method pop
 
     public String toString() {
