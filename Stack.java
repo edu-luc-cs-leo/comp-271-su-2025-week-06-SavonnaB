@@ -1,7 +1,7 @@
 public class Stack extends DynamicArray implements Comparable<Stack>, Xifo<String>, Lifo<String> {
 
     public int compareTo(Stack other) {
-        return this.getOccupancy() - other.getOccupancy(); //SB: this logic compares boths stacks and returns postive/negative or 0.
+        return this.getOccupancy() - other.getOccupancy(); //SB: this logic compares boths stacks and returns postive/negative or 0 if it's the same.
     } // method compareTo
 
     public String peek() {
