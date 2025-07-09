@@ -17,6 +17,7 @@ public class Stack extends DynamicArray implements Comparable<Stack>, Xifo<Strin
     } // method toString
 
     public void push(String e) {
+        this.add(e); //SB: adds element to the top of stack
     } // method push
 
 } // class Stack
